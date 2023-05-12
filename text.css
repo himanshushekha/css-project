@@ -1,0 +1,14 @@
+div
+{
+border:1px solid red;
+width:500px;
+background-color:yellow;
+margin:100px;
+padding:20px;
+
+
+
+}
+div:hover{
+    opacity:0.7;
+}

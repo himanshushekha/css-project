@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  background-image: url(./images/bg-pattern-top-desktop.svg),
+    url(./images/bg-pattern-bottom-desktop.svg);
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vh;
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  margin-top: 4em;
+}
+.user-information {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+.product {
+  padding: 20px;
+  padding-top: 0;
+}
+.product h1 {
+  font-size: 2em;
+  line-height: 0.75em;
+  color: hsl(300, 43%, 22%);
+  padding: 18px 0;
+  max-width: 50%;
+}
+.user-information p {
+  color: hsl(303, 10%, 53%);
+  max-width: 75%;
+}
+
+.review-stars-icon {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.review-stars {
+  color: orange;
+}
+li {
+  color: hsl(300, 43%, 22%);
+  background-color: hsl(300, 24%, 96%);
+  padding: 14px 32px;
+  margin: 6px;
+  margin-left: 1em;
+  border-radius: 12px;
+  max-width: 400px;
+}
+.rated {
+  margin-left: 1em;
+}
+li:first-child {
+  position: relative;
+  right: 8em;
+}
+li:nth-of-type(2) {
+  position: relative;
+  right: 3em;
+}
+/* =========================Card profile=============================== */
+
+.card-container {
+  display: flex;
+  margin-top: 2em;
+}
+section {
+  color: white;
+  background-color: hsl(300, 43%, 22%);
+  margin: 6px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.profile__container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.profile__container img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+.buyer__name {
+  margin-left: 1em;
+  line-height: 20px;
+}
+.buyer__name h2 {
+  font-size: 18px;
+}
+.buyer__name h3 {
+  color: hsl(333, 80%, 67%);
+  font-size: 14px;
+}
+section p {
+  line-height: 20px;
+}
+section:nth-of-type(2) {
+  position: relative;
+  top: 1em;
+}
+section:nth-of-type(3) {
+  position: relative;
+  top: 2em;
+}
+
+/* =================================Footer=============================== */
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* =================================Media Query=============================== */
+
+@media (max-width: 375px) {
+  .main-container {
+    margin-top: 1em;
+  }
+
+  .user-information {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  li:first-child {
+    position: relative;
+    right: 0em;
+  }
+  li:nth-of-type(2) {
+    position: relative;
+    right: 0em;
+  }
+  li {
+    display: flex;
+    padding: 8px 12px;
+  }
+}

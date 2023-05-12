@@ -1,0 +1,19 @@
+li:first-child
+{
+    color:red;
+}
+li:last-child{
+    color:green;
+}
+li:nth-child(5)
+{
+    color:blue;
+}
+li:nth-child(odd)
+{
+    color:yellow;
+}
+input:focus
+{
+    border:1px solid red;
+}

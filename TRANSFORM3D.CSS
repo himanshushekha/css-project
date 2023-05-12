@@ -1,0 +1,17 @@
+
+#cover
+{
+    border:2px solid red;
+    height:200px;
+    width:200px;
+    margin:20px;
+
+}
+#content
+{
+    height:200px;
+    width:200px;
+    background-color: green;
+    transform: perspective (300px) translate(40px,0px,0px);
+}
+

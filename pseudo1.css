@@ -1,0 +1,17 @@
+
+li
+:first-child{
+    COLOR:RED;
+
+}
+li:LAST :last-child{
+COLOR:YELLOW;
+}
+li:nth-child(4)
+{
+    COLOR:PINK;
+}
+li:nth-child(odd)
+{
+    color:brown;
+}
