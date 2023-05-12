@@ -1,0 +1,14 @@
+div{
+
+    column-count: 3;
+    column-gap: 50px;
+    column-rule: 1px solid red;
+    column-rule-color: #0000ff;
+    column-rule-width: 1px;
+    column-rule-color: orange;
+    
+}
+h1{
+    column-span:all;
+    column-width:300px;
+}
