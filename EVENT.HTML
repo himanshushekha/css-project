@@ -6,33 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVENTS</title>
     
+
 </head>
 <body>
-
-   <button id="btn"> CLICK HERE PLEASE FOR EVENT LISTNER </button>
-    <script>
+<form action=""> 
 
 
 
+    <input type="text" id="myInput">
+</form>
 
-let btn =document.getElementById("btn")
-btn.addEventListener('mouseover',function()
+<script>
+let x =document.getElementById("myInput")
+x.addEventListener('focus',myFocus);
+x.addEventListener('bour',myBlur);
+
+x.addEventListener('input',function()
+
 {
-    alert("button clicked");
-})
-btn.addEventListener('mouseout',function()
+    console.log(this.value);
+});
+function myFocus()
 {
-    alert("button clicked");
-})
-btn.addEventListener('clicked',function()
+ x.style.background="yellow";
+}
+function myBlur()
 {
-    alert("button clicked");
-})
-btn.addEventListener('doubleclick',function()
-{
-    alert("button clicked");
-})
+    x.style.background="red";
+}
 
+
+
+
+
+  
+</script>
 
 
 
